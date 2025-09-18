@@ -34,9 +34,7 @@ with sq.connect("Pass.db",check_same_thread=False) as con: #Insert the name of y
 
 root = Tk()
 root.title("Pass Inserter")
-icon = PhotoImage(file = "icon2.png")
 root.geometry("500x300")
-root.iconphoto(False,icon)
 root.resizable(False,False)
 
 notebook = ttk.Notebook(root)
@@ -96,4 +94,5 @@ notebook.add(frame2,text="Получить пароль")
 notebook.add(frame3,text="Удалить пароль")
 
 root.mainloop()
+
 
